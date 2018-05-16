@@ -1,0 +1,10 @@
+{% extends 'note/base.html' %}
+
+{% block content %}
+<h1 class="cover-heading">Django Simple Demo</h1>
+<p class="lead">간단한 장고 메모장입니다.</p>
+<p class="lead">
+  <a href="{%url 'note'%}" class="btn btn-lg btn-secondary">게시글 보기</a>   
+  <a href="{%url 'write'%}" class="btn btn-lg btn-secondary">게시글 쓰기</a>   
+</p>
+{% endblock %}

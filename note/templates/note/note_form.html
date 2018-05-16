@@ -1,0 +1,8 @@
+{% extends 'note/base.html' %}
+
+{% block content %}
+<h1>새 글 쓰기</h1>
+    <form action="" method="post">{% csrf_token %} {{ form.as_p }}
+        <input type="submit" value="글쓰기" class="btn btn-lg btn-secondary"/>
+    </form>
+{% endblock %}
